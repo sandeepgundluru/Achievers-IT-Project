@@ -1,3 +1,4 @@
+/*universal selector */
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +43,7 @@ ul a {
     color: black;
     font-weight: 600;
 }
-
+/* hero class stylinng */
 .hero {
   height: 300px;
   background:no-repeat center center/cover;
