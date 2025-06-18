@@ -1,3 +1,4 @@
+/* body */
 body{
     height: auto;
     background-color: #f6f9fc;
@@ -62,7 +63,7 @@ ul a {
 .text p{
     color: gray;
 }
-
+/* four columns */
 .fourcolumns{
     display: grid;
     grid-template-columns: repeat(4,1fr);
