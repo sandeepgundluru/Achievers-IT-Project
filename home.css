@@ -1,0 +1,578 @@
+body{
+    height: auto;
+    background-color: #f6f9fc;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*header*/
+
+nav {
+    height: 75px;
+    width: 100%;
+    box-shadow: 0 1px 15px grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+
+}
+
+h1 {
+    font-size: 30px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+
+}
+
+ul a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+
+/* carousel */
+
+.carousel-item {
+      height: 500px;
+      margin-left: 100px;
+    }
+.carousel-item img {
+      height: 80%;
+      object-fit: cover;
+      position: relative;
+      left: 800px;
+      top: 100px;
+    }
+.text{
+  position: absolute;
+  bottom: 20%;
+  left: 13%;
+  color: black;
+  text-align: left;
+ 
+  padding: 20px;
+  border-radius: 10px;
+}
+.text p{
+    color: gray;
+}
+
+.fourcolumns{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height:300px;
+    background-color: #ffffff;
+}
+.fourcolumns div{
+    padding-left: 120px;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#car{
+    background-color: rgba(253,239,230,255);
+}
+#card{
+    background-color: rgba(206,235,233,255);
+}
+#shield{
+    background-color:rgba(226,242,178,255);
+}
+#headphones{
+    background-color: rgba(214,229,251,255);
+}
+.fourcolumns .icon{
+    height:30px;
+    width:30px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+}
+
+
+/* products */
+.products-section {
+  padding: 3rem 2rem;
+}
+
+.products-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0f3460;
+  font-size: 2rem;
+}
+
+.products-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.2rem;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  /* text-align: center; */
+  position: relative;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.rating {
+  color: #f5c518;
+  font-size: 1rem;
+}
+
+.price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0f3460;
+}
+
+.add-btn {
+  height:40px;
+  width:40px;
+  background-color: transparent;
+  border: 2px solid #0f3460;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 1rem;
+  color: #0f3460;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #0f3460;
+  color: #fff;
+}
+
+.head{
+   display: flex;
+   justify-content: center;
+}
+.discount{
+    background-color: rgb(22, 97, 41);
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+.heart-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      /* color: red; */
+      font-size: 18px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+.product-card:hover .heart-icon {
+      opacity: 1;
+}
+
+.footer {
+    background-color: rgba(15,52,96,255);
+    color: #ffffff;
+    padding: 60px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 20px;
+    margin-top: 50px;
+}
+
+.footer-column {
+    flex: 1 1 250px;   /* Allows wrapping and responsive behavior */
+    min-width: 220px;
+    box-sizing: border-box;
+}
+
+.footer-column .logo {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-column .logo i {
+    margin-right: 10px;
+    font-size: 28px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-column address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+.footer-column h3,
+.footer-column address,
+.footer-column p,
+.footer-column ul li a {
+    color:rgba(253,254,253,255)
+}
+
+/* responsive */
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .fourcolumns{
+        flex-wrap: wrap;
+    }
+    nav {
+        padding: 20px;
+    }
+
+    #item {
+        width: 90%;
+    }
+
+    aside {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .fourcolumns{
+        flex-wrap: wrap;
+    }
+    ul {
+        gap: 15px;
+        font-size: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cart-item-details h3 {
+        font-size: 22px;
+    }
+
+    .cart-item-price {
+        font-size: 14px;
+    }
+
+    .cart-item-quantity button {
+        padding: 8px 12px;
+        font-size: 18px;
+    }
+
+    aside {
+        padding: 20px;
+    }
+
+    .footer {
+        padding: 40px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .fourcolumns{
+         flex-wrap: wrap;
+    }
+    nav h1 {
+        font-size: 20px;
+    }
+
+    ul a {
+        font-size: 16px;
+    }
+
+    #item {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 15px;
+    }
+
+    #item img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 15px 0;
+    }
+
+    .cart-item-details {
+        gap: 15px;
+    }
+
+    .symbols {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cart-item-quantity {
+        margin: 0;
+    }
+
+    .remove-item {
+        position: static;
+        font-size: 24px;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 30px 15px;
+    }
+}
+.hamburger {
+    display: none;
+    position: relative;
+}
+
+.hamburger i {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 10px;
+    z-index: 999;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.hamburger:hover .dropdown-menu {
+    display: flex;
+}
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+    color: #0f3460;
+    border-radius: 4px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        padding: 20px;
+    }
+
+    .logo h1 {
+        font-size: 24px;
+    }
+}
+
+
+/* ===== Make Four Cards Section Responsive ===== */
+@media (max-width: 992px) {
+    .fourcolumns {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+    .fourcolumns div {
+        padding: 20px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .fourcolumns {
+        grid-template-columns: 1fr;
+    }
+    .fourcolumns div {
+        padding: 15px;
+        margin: 10px auto;
+        width: 90%;
+    }
+}
+
+/* ===== Make Carousel Responsive ===== */
+@media (max-width: 992px) {
+    .carousel-item {
+        height: auto;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .text {
+        position: static;
+        color: black;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text h1 {
+        font-size: 24px;
+    }
+
+    .text p {
+        font-size: 14px;
+    }
+
+    .text button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer-column h3,
+    .footer-column address,
+    .footer-column p,
+    .footer-column ul li a {
+        color: #ffffff;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .footer {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;  /* STACK the columns vertically */
+        padding: 30px 15px;
+        gap: 20px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .footer-column h3,
+    .footer-column address,
+    .footer-column p,
+    .footer-column ul li a {
+        color: #ffffff;
+        font-size: 15px;
+    }
+}
