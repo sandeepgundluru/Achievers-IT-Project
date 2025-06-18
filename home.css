@@ -407,6 +407,8 @@ ul a {
         padding: 30px 15px;
     }
 }
+
+/*hamburger responsive updated */
 .hamburger {
     display: none;
     position: relative;
