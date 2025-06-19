@@ -12,10 +12,13 @@ nav {
     height: 75px;
     width: 100%;
     box-shadow: 0 1px 15px grey;
+    background-color:white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
+    position:fixed;
+    z-index:1000;
 
 }
 
