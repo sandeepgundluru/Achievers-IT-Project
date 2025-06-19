@@ -71,6 +71,7 @@ ul a {
 .filter-dropdown {
   position: relative;
   display: inline-block;
+  background-color: #0f3460;
 }
 
 .filter-button {
