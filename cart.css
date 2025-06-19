@@ -21,8 +21,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-/*     position: fixed;
-    z-index: 1000; */
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
 
 }
 
@@ -48,6 +49,7 @@ ul a {
     display: flex;
     flex-direction: column;
     gap: 45px;
+    margin-top: 50px;
 
 }
 
@@ -156,6 +158,7 @@ aside {
     background-color: white;
     box-sizing: border-box;
     padding: 30px;
+    margin-top: 50px;
 
 }
 
